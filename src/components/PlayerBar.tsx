@@ -10,22 +10,37 @@ export default function PlayerBar() {
   const playing = status === "playing";
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-zinc-800 bg-zinc-950/95 backdrop-blur">
-      <div className="mx-auto flex h-18 max-w-6xl items-center gap-3 px-4">
+    <div className="fixed inset-x-0 bottom-[calc(3.75rem+env(safe-area-inset-bottom))] z-50 border-t border-border bg-surface/95 backdrop-blur md:bottom-0">
+      <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
         <StationLogo src={current.favicon} name={current.name} size={44} className="h-11 w-11" />
         <div className="min-w-0 flex-1">
           <Link
             href={`/station/${current.slug}`}
-            className="block truncate text-sm font-semibold text-zinc-100 hover:text-emerald-400"
+            className="block truncate text-sm font-semibold text-ink hover:text-brand-2"
           >
             {current.name}
           </Link>
-          <p className={`truncate text-xs ${status === "error" ? "text-red-400" : "text-zinc-500"}`}>
-            {status === "error"
-              ? error ?? "Stream unavailable"
-              : status === "loading"
-                ? "Connecting…"
-                : `${current.language} · live`}
+          <p
+            className={`flex items-center gap-1.5 truncate text-xs ${
+              status === "error" ? "text-danger" : "text-muted"
+            }`}
+          >
+            {status === "error" ? (
+              error ?? "Stream unavailable"
+            ) : status === "loading" ? (
+              "Connecting…"
+            ) : playing ? (
+              <>
+                <span className="flex h-3 items-end gap-[2px]" aria-hidden>
+                  <span className="eq-bar h-full w-[3px] rounded-sm bg-brand-2 dark:bg-accent" />
+                  <span className="eq-bar h-full w-[3px] rounded-sm bg-brand-2 dark:bg-accent" />
+                  <span className="eq-bar h-full w-[3px] rounded-sm bg-brand-2 dark:bg-accent" />
+                </span>
+                Live
+              </>
+            ) : (
+              "Paused"
+            )}
           </p>
         </div>
 
@@ -33,7 +48,7 @@ export default function PlayerBar() {
           type="button"
           onClick={toggle}
           aria-label={playing ? "Pause" : "Play"}
-          className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-500 text-zinc-950 transition hover:bg-emerald-400"
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-accent text-accent-ink shadow-md transition hover:brightness-105"
         >
           {playing ? (
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
@@ -48,7 +63,7 @@ export default function PlayerBar() {
         </button>
 
         <div className="hidden items-center gap-2 sm:flex">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" className="text-zinc-400">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" className="text-muted">
             <path d="M11 5 6 9H2v6h4l5 4V5z" fill="currentColor" stroke="none" />
             <path d="M15.5 8.5a5 5 0 0 1 0 7" />
           </svg>
@@ -60,7 +75,7 @@ export default function PlayerBar() {
             value={volume}
             onChange={(e) => setVolume(Number(e.target.value))}
             aria-label="Volume"
-            className="w-24 accent-emerald-500"
+            className="w-24 accent-brand-2"
           />
         </div>
 
@@ -68,7 +83,7 @@ export default function PlayerBar() {
           type="button"
           onClick={stop}
           aria-label="Stop"
-          className="rounded-lg p-2 text-zinc-400 transition hover:bg-zinc-800 hover:text-zinc-100"
+          className="rounded-lg p-2 text-muted transition hover:bg-surface-2 hover:text-ink"
         >
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             <path d="M18 6 6 18M6 6l12 12" />
@@ -77,7 +92,7 @@ export default function PlayerBar() {
       </div>
       {status === "loading" && (
         <div className="absolute inset-x-0 top-0 h-0.5 overflow-hidden">
-          <div className="h-full w-1/3 animate-pulse bg-emerald-500" />
+          <div className="h-full w-1/3 animate-pulse bg-accent" />
         </div>
       )}
     </div>

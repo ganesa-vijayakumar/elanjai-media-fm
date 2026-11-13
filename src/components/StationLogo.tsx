@@ -24,7 +24,7 @@ export default function StationLogo({
       .toUpperCase();
     return (
       <div
-        className={`flex items-center justify-center rounded-xl bg-gradient-to-br from-emerald-600 to-cyan-800 font-bold text-white ${className}`}
+        className={`flex items-center justify-center rounded-xl bg-gradient-to-br from-brand-2 to-brand font-bold text-accent ${className}`}
         style={{ width: size, height: size, fontSize: size / 3 }}
         aria-hidden
       >
@@ -40,7 +40,7 @@ export default function StationLogo({
       width={size}
       height={size}
       loading="lazy"
-      className={`rounded-xl object-cover bg-zinc-800 ${className}`}
+      className={`rounded-xl object-cover bg-surface-2 ${className}`}
       onError={() => setBroken(true)}
     />
   );

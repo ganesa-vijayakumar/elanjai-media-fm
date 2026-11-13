@@ -6,16 +6,13 @@ const stations = stationsJson as Station[];
 const genres = genresJson as Genre[];
 
 /**
- * Streams served over plain http:// cannot be loaded from an https page
- * (mixed content), and some endpoints set hostile CORS headers. Both cases
- * go through our same-origin /api/stream proxy — same trick as the
- * `private-stream` proxy used by tamilradios.com.
+ * All playback goes through our same-origin /api/stream proxy — the same
+ * `private-stream` trick tamilradios.com uses. It normalizes http/https,
+ * dodges hostile CORS on hls.js XHR fetches, rewrites HLS manifests, and
+ * keeps broadcaster origins hidden from the page.
  */
 export function playableUrl(streamUrl: string): string {
-  if (streamUrl.startsWith("http://")) {
-    return `/api/stream?u=${Buffer.from(streamUrl).toString("base64url")}`;
-  }
-  return streamUrl;
+  return `/api/stream?u=${Buffer.from(streamUrl).toString("base64url")}`;
 }
 
 export function toPublic(s: Station): PublicStation {
@@ -31,6 +28,7 @@ export function toPublic(s: Station): PublicStation {
     favicon: s.favicon,
     votes: s.votes,
     stream: playableUrl(s.stream_url),
+    hls: /\.m3u8?($|\?)/i.test(s.stream_url),
   };
 }
 

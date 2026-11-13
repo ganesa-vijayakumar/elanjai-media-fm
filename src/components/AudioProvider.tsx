@@ -55,6 +55,7 @@ export default function AudioProvider({
 }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const hlsRef = useRef<{ destroy: () => void } | null>(null);
+  const watchdogRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [current, setCurrent] = useState<PublicStation | null>(null);
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
@@ -76,7 +77,10 @@ export default function AudioProvider({
     });
     audio.volume = read<number>(VOL_KEY, 0.9);
 
-    const onPlaying = () => setStatus("playing");
+    const onPlaying = () => {
+      clearWatchdog();
+      setStatus("playing");
+    };
     const onPause = () => setStatus("paused");
     const onWaiting = () => setStatus("loading");
     const onError = () => {
@@ -94,12 +98,20 @@ export default function AudioProvider({
       audio.removeEventListener("error", onError);
       audio.pause();
       hlsRef.current?.destroy();
+      if (watchdogRef.current) clearTimeout(watchdogRef.current);
     };
   }, []);
 
   const destroyHls = () => {
     hlsRef.current?.destroy();
     hlsRef.current = null;
+  };
+
+  const clearWatchdog = () => {
+    if (watchdogRef.current) {
+      clearTimeout(watchdogRef.current);
+      watchdogRef.current = null;
+    }
   };
 
   const play = useCallback(async (s: PublicStation) => {
@@ -109,23 +121,37 @@ export default function AudioProvider({
     setStatus("loading");
     setError(null);
     destroyHls();
+    clearWatchdog();
     audio.pause();
     audio.removeAttribute("src");
 
-    const isHls = /\.m3u8?($|\?)/.test(s.stream);
-    if (isHls && !audio.canPlayType("application/vnd.apple.mpegurl")) {
+    // If we never reach "playing", the stream is dead or unreachable.
+    watchdogRef.current = setTimeout(() => {
+      setStatus((st) => {
+        if (st === "loading") {
+          setError("Station is offline or took too long to connect");
+          return "error";
+        }
+        return st;
+      });
+    }, 12000);
+
+    if (s.hls && !audio.canPlayType("application/vnd.apple.mpegurl")) {
       const { default: Hls } = await import("hls.js");
       if (Hls.isSupported()) {
-        const hls = new Hls({ maxBufferLength: 20 });
+        const hls = new Hls({ maxBufferLength: 20, manifestLoadingMaxRetry: 2 });
         hlsRef.current = hls;
         hls.on(Hls.Events.ERROR, (_e, d) => {
-          if (d.fatal) {
-            setStatus("error");
-            setError("Stream unavailable right now");
+          if (!d.fatal) return;
+          if (d.type === Hls.ErrorTypes.NETWORK_ERROR) {
+            hls.startLoad();
+            return;
           }
+          setStatus("error");
+          setError("Stream unavailable right now");
         });
-        hls.loadSource(s.stream);
         hls.attachMedia(audio);
+        hls.on(Hls.Events.MEDIA_ATTACHED, () => hls.loadSource(s.stream));
       } else {
         setStatus("error");
         setError("HLS not supported in this browser");
@@ -137,9 +163,12 @@ export default function AudioProvider({
 
     try {
       await audio.play();
-    } catch {
-      setStatus("error");
-      setError("Playback was blocked or the stream is offline");
+    } catch (err) {
+      // AbortError fires when a newer station replaces this src — ignore it.
+      if ((err as DOMException)?.name !== "AbortError") {
+        setStatus("error");
+        setError("Playback was blocked or the stream is offline");
+      }
       return;
     }
 
@@ -160,6 +189,7 @@ export default function AudioProvider({
   const stop = useCallback(() => {
     const audio = audioRef.current;
     destroyHls();
+    clearWatchdog();
     audio?.pause();
     audio?.removeAttribute("src");
     setCurrent(null);

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import StationCard from "@/components/StationCard";
 import { getGenre, getGenres, getStationsByGenre, toPublic } from "@/lib/data";
@@ -29,6 +30,7 @@ export default async function GenrePage({ params }: Props) {
   const g = getGenre(slug);
   if (!g) notFound();
   const stations = getStationsByGenre(g.slug).map(toPublic);
+  const siblings = getGenres().filter((x) => x.slug !== g.slug);
 
   return (
     <div className="py-8">
@@ -46,7 +48,23 @@ export default async function GenrePage({ params }: Props) {
       <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
         {g.name} radio stations
       </h1>
-      <p className="mt-1 text-zinc-400">{g.count} live stations — click any logo to listen.</p>
+      <p className="mt-1 text-muted">{g.count} live stations — tap any card to listen.</p>
+
+      <div className="mt-4 flex gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <span className="shrink-0 rounded-full bg-accent px-4 py-1.5 text-sm font-semibold text-accent-ink">
+          {g.name}
+        </span>
+        {siblings.map((x) => (
+          <Link
+            key={x.slug}
+            href={`/genre/${x.slug}`}
+            className="shrink-0 rounded-full border border-border bg-surface px-4 py-1.5 text-sm text-muted transition hover:border-brand-2 hover:text-ink"
+          >
+            {x.name}
+          </Link>
+        ))}
+      </div>
+
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
         {stations.map((s) => (
           <StationCard key={s.id} station={s} />

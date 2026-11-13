@@ -9,35 +9,60 @@ export default function HomePage() {
   const total = getStations().length;
 
   return (
-    <div className="py-8">
+    <div className="py-6 sm:py-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
       />
 
-      <section className="mb-10 text-center">
-        <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-          Free Indian radio, <span className="text-emerald-400">live</span>
-        </h1>
-        <p className="mx-auto mt-3 max-w-xl text-zinc-400">
-          {total}+ stations in {genres.length} languages — click a logo and listen.
-          No sign-up, no app, works on any device.
-        </p>
-        <div className="mt-5 flex flex-wrap justify-center gap-2">
-          {genres.map((g) => (
+      {/* Hero — dark green panel, light yellow accent */}
+      <section className="relative overflow-hidden rounded-3xl bg-brand px-6 py-10 text-brand-ink sm:px-10 sm:py-14">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent/15 blur-2xl"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -bottom-32 -left-16 h-72 w-72 rounded-full bg-white/10 blur-2xl"
+        />
+        <div className="relative">
+          <span className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wide text-accent-ink">
+            <span className="flex h-2 w-2 rounded-full bg-brand-2" />
+            Live now · {total} stations
+          </span>
+          <h1 className="mt-4 max-w-2xl text-3xl font-black leading-tight tracking-tight sm:text-5xl">
+            Every Indian radio station. One tap away.
+          </h1>
+          <p className="mt-3 max-w-xl text-sm text-brand-ink/75 sm:text-base">
+            Tamil, Hindi, Malayalam, Telugu, Kannada, Punjabi & more — streaming
+            free in your browser. No sign-up, no app, no ads in your ears.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {genres.slice(0, 5).map((g) => (
+              <Link
+                key={g.slug}
+                href={`/genre/${g.slug}`}
+                className="rounded-full bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur transition hover:bg-accent hover:text-accent-ink"
+              >
+                {g.name}
+              </Link>
+            ))}
             <Link
-              key={g.slug}
-              href={`/genre/${g.slug}`}
-              className="rounded-full border border-zinc-700 px-4 py-1.5 text-sm text-zinc-300 transition hover:border-emerald-500 hover:text-emerald-300"
+              href="/genres"
+              className="rounded-full border border-accent/60 px-4 py-2 text-sm font-semibold text-accent transition hover:bg-accent hover:text-accent-ink"
             >
-              {g.name} <span className="text-zinc-500">({g.count})</span>
+              All {genres.length} languages →
             </Link>
-          ))}
+          </div>
         </div>
       </section>
 
-      <section aria-labelledby="featured">
-        <h2 id="featured" className="mb-4 text-xl font-bold">Popular right now</h2>
+      <section aria-labelledby="featured" className="mt-10">
+        <div className="mb-4 flex items-baseline justify-between">
+          <h2 id="featured" className="text-xl font-bold sm:text-2xl">
+            Popular right now
+          </h2>
+        </div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {featured.map((s) => (
             <StationCard key={s.id} station={s} />
@@ -51,10 +76,13 @@ export default function HomePage() {
         return (
           <section key={g.slug} aria-labelledby={`g-${g.slug}`} className="mt-12">
             <div className="mb-4 flex items-baseline justify-between">
-              <h2 id={`g-${g.slug}`} className="text-xl font-bold">
+              <h2 id={`g-${g.slug}`} className="text-xl font-bold sm:text-2xl">
                 {g.name} radio
               </h2>
-              <Link href={`/genre/${g.slug}`} className="text-sm text-emerald-400 hover:underline">
+              <Link
+                href={`/genre/${g.slug}`}
+                className="text-sm font-medium text-brand-2 hover:underline dark:text-accent"
+              >
                 All {g.count} →
               </Link>
             </div>

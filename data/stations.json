@@ -528,7 +528,7 @@
    "south india",
    "tamil"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "881e4a06",
@@ -1538,7 +1538,7 @@
    "tamil cinema music",
    "tamil music"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "745b9fd9",
@@ -1770,7 +1770,7 @@
    "tamil",
    "tamil nadu"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "b18e9a49",
@@ -1909,7 +1909,7 @@
    "tamil cinema music",
    "tamil music"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "40bfa6d1",
@@ -1946,7 +1946,7 @@
    "tamil cinema music",
    "tamil music"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "01ba4b62",
@@ -2317,7 +2317,7 @@
    "south radio",
    "tamil"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "95ff4cb7",
@@ -2539,7 +2539,7 @@
    "tamil cinema music",
    "tamil music"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "1b125973",
@@ -2681,7 +2681,7 @@
    "tm soundarajan",
    "tms"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "e662cc1b",
@@ -2716,7 +2716,7 @@
    "mohan hits",
    "tamil"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "8142e388",
@@ -3293,7 +3293,7 @@
   "bitrate": 128,
   "votes": 221,
   "tags": [],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "9cfb2097",

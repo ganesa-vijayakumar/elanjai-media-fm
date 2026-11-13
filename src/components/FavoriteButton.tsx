@@ -12,7 +12,7 @@ export default function FavoriteButton({ id }: { id: string }) {
       aria-pressed={on}
       aria-label={on ? "Remove from favorites" : "Add to favorites"}
       className={`rounded-full p-2 transition ${
-        on ? "text-rose-400" : "text-zinc-500 hover:text-rose-300"
+        on ? "text-rose-500 dark:text-rose-400" : "text-brand-ink/50 hover:text-rose-400"
       }`}
     >
       <svg viewBox="0 0 24 24" width="20" height="20" fill={on ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2">

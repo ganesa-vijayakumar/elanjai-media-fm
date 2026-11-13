@@ -61,28 +61,32 @@ export default async function StationPage({ params }: Props) {
         }}
       />
 
-      <nav aria-label="Breadcrumb" className="mb-6 text-sm text-zinc-500">
-        <Link href="/" className="hover:text-zinc-300">Home</Link>
+      <nav aria-label="Breadcrumb" className="mb-6 text-sm text-muted">
+        <Link href="/" className="hover:text-ink">Home</Link>
         <span className="mx-2">/</span>
-        <Link href={`/genre/${s.genre}`} className="capitalize hover:text-zinc-300">
+        <Link href={`/genre/${s.genre}`} className="capitalize hover:text-ink">
           {s.genre}
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-zinc-300">{s.name}</span>
+        <span className="text-ink">{s.name}</span>
       </nav>
 
-      <div className="flex flex-col items-start gap-6 rounded-3xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-6 sm:flex-row sm:items-center sm:p-8">
-        <StationLogo src={s.favicon} name={s.name} size={144} className="h-36 w-36" />
+      <div className="relative flex flex-col items-start gap-6 overflow-hidden rounded-3xl bg-brand p-6 text-brand-ink sm:flex-row sm:items-center sm:p-8">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-accent/15 blur-2xl"
+        />
+        <StationLogo src={s.favicon} name={s.name} size={144} className="h-36 w-36 shadow-xl" />
         <div className="min-w-0 flex-1">
           <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">{s.name}</h1>
-          <p className="mt-1 text-zinc-400">
+          <p className="mt-1 text-brand-ink/70">
             {s.language} · {s.country}
             {s.bitrate ? ` · ${s.bitrate} kbps ${s.codec}` : ""}
           </p>
           {s.tags.length > 0 && (
             <div className="mt-3 flex flex-wrap gap-2">
               {s.tags.slice(0, 5).map((t) => (
-                <span key={t} className="rounded-full bg-zinc-800 px-2.5 py-0.5 text-xs text-zinc-400">
+                <span key={t} className="rounded-full bg-white/10 px-2.5 py-0.5 text-xs text-brand-ink/80">
                   {t}
                 </span>
               ))}
@@ -90,14 +94,14 @@ export default async function StationPage({ params }: Props) {
           )}
           <div className="mt-5 flex items-center gap-3">
             <PlayButton station={pub} size={56} />
-            <span className="text-sm text-zinc-400">Tap to listen live</span>
+            <span className="text-sm font-medium text-accent">Tap to listen live</span>
             <FavoriteButton id={s.id} />
             {s.homepage && (
               <a
                 href={s.homepage}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-2 text-sm text-emerald-400 hover:underline"
+                className="ml-2 text-sm text-brand-ink/80 underline-offset-4 hover:text-accent hover:underline"
               >
                 Official site ↗
               </a>
@@ -108,7 +112,9 @@ export default async function StationPage({ params }: Props) {
 
       {related.length > 0 && (
         <section aria-labelledby="related" className="mt-12">
-          <h2 id="related" className="mb-4 text-xl font-bold">More {s.genre} stations</h2>
+          <h2 id="related" className="mb-4 text-xl font-bold sm:text-2xl">
+            More {s.genre} stations
+          </h2>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
             {related.map((r) => (
               <StationCard key={r.id} station={r} />

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 export default function RecentPage() {
   return (
     <div className="py-8">
-      <h1 className="text-2xl font-extrabold tracking-tight">Recently played</h1>
-      <p className="mt-1 text-zinc-400">Your last 20 stations, stored on this device.</p>
+      <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">Recently played</h1>
+      <p className="mt-1 text-muted">Your last 20 stations, stored on this device.</p>
       <div className="mt-6">
         <ClientStationList kind="recents" />
       </div>

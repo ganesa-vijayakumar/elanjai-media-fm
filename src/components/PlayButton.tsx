@@ -27,12 +27,12 @@ export default function PlayButton({
         if (isCurrent) toggle();
         else play(station);
       }}
-      className={`flex items-center justify-center rounded-full bg-emerald-500 text-zinc-950 shadow-lg shadow-emerald-500/30 transition hover:scale-105 hover:bg-emerald-400 active:scale-95 ${className}`}
+      className={`flex items-center justify-center rounded-full bg-accent text-accent-ink shadow-lg shadow-black/20 transition hover:scale-105 hover:brightness-105 active:scale-95 ${className}`}
       style={{ width: size, height: size }}
     >
       {loading ? (
         <span
-          className="block animate-spin rounded-full border-2 border-zinc-900/30 border-t-zinc-900"
+          className="block animate-spin rounded-full border-2 border-accent-ink/30 border-t-accent-ink"
           style={{ width: size * 0.45, height: size * 0.45 }}
         />
       ) : playing ? (

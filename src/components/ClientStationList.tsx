@@ -10,8 +10,8 @@ export default function ClientStationList({ kind }: { kind: "favorites" | "recen
 
   if (list.length === 0) {
     return (
-      <div className="rounded-2xl border border-dashed border-zinc-800 p-12 text-center">
-        <p className="text-zinc-400">
+      <div className="rounded-2xl border border-dashed border-border bg-surface p-12 text-center">
+        <p className="text-muted">
           {kind === "favorites"
             ? "No favorites yet — tap the heart on any station."
             : "Nothing played yet — pick a station to get started."}

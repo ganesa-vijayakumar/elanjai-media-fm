@@ -16,11 +16,19 @@ async function Results({ searchParams }: Props) {
 
   return (
     <>
-      <h1 className="text-2xl font-extrabold tracking-tight">
+      <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
         {q ? `Results for “${q}”` : "Search"}
       </h1>
-      {q && <p className="mt-1 text-zinc-400">{results.length} station{results.length === 1 ? "" : "s"} found</p>}
-      {!q && <p className="mt-1 text-zinc-400">Type a station, language, or tag in the search box above.</p>}
+      {q && (
+        <p className="mt-1 text-muted">
+          {results.length} station{results.length === 1 ? "" : "s"} found
+        </p>
+      )}
+      {!q && (
+        <p className="mt-1 text-muted">
+          Type a station, language, or tag in the search box above.
+        </p>
+      )}
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
         {results.map((s) => (
           <StationCard key={s.id} station={s} />
@@ -33,7 +41,9 @@ async function Results({ searchParams }: Props) {
 export default function SearchPage(props: Props) {
   return (
     <div className="py-8">
-      <Suspense fallback={<h1 className="text-2xl font-extrabold tracking-tight">Searching…</h1>}>
+      <Suspense
+        fallback={<h1 className="text-2xl font-extrabold tracking-tight">Searching…</h1>}
+      >
         <Results {...props} />
       </Suspense>
     </div>

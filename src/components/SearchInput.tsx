@@ -25,7 +25,7 @@ export default function SearchInput() {
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
-        className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500"
+        className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-brand-ink/50"
       >
         <circle cx="11" cy="11" r="7" />
         <path d="m20 20-3.5-3.5" />
@@ -36,7 +36,7 @@ export default function SearchInput() {
         onChange={(e) => setQ(e.target.value)}
         placeholder="Search stations…"
         aria-label="Search stations"
-        className="w-40 rounded-full border border-zinc-700 bg-zinc-900 py-1.5 pl-9 pr-3 text-sm text-zinc-100 placeholder-zinc-500 outline-none transition focus:w-56 focus:border-emerald-500 sm:w-52 sm:focus:w-72"
+        className="w-44 rounded-full border border-white/20 bg-white/10 py-1.5 pl-9 pr-3 text-sm text-brand-ink placeholder-brand-ink/50 outline-none transition focus:w-64 focus:border-accent focus:bg-white/15"
       />
     </form>
   );

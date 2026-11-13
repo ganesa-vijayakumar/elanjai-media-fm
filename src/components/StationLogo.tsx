@@ -2,20 +2,25 @@
 
 import { useState } from "react";
 
-/** Station logo with graceful fallback to colored initials (favicons 404 a lot). */
+/** Station logo — local asset → remote favicon → colored initials fallback. */
 export default function StationLogo({
   src,
+  fallbackSrc,
   name,
   size = 96,
   className = "",
 }: {
   src: string;
+  fallbackSrc?: string;
   name: string;
   size?: number;
   className?: string;
 }) {
-  const [broken, setBroken] = useState(!src);
-  if (broken) {
+  const urls = [src, fallbackSrc].filter(Boolean) as string[];
+  const [stage, setStage] = useState(0);
+  const url = urls[Math.min(stage, urls.length)];
+
+  if (!url) {
     const initials = name
       .split(/\s+/)
       .slice(0, 2)
@@ -34,13 +39,13 @@ export default function StationLogo({
   return (
     // eslint-disable-next-line @next/next/no-img-element -- arbitrary remote favicons can't go through next/image
     <img
-      src={src}
+      src={url}
       alt={`${name} logo`}
       width={size}
       height={size}
       loading="lazy"
       className={`rounded-[28%] object-cover bg-surface-2 ${className}`}
-      onError={() => setBroken(true)}
+      onError={() => setStage((s) => s + 1)}
     />
   );
 }

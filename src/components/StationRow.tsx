@@ -30,7 +30,7 @@ export default function StationRow({
         className="absolute inset-0 rounded-[18px]"
         aria-label={station.name}
       />
-      <StationLogo src={station.favicon} name={station.name} size={44} className="h-11 w-11 shrink-0" />
+      <StationLogo src={station.favicon} fallbackSrc={station.faviconAlt} name={station.name} size={44} className="h-11 w-11 shrink-0" />
       <div className="min-w-0 flex-1">
         <p className="truncate text-[13.5px] font-semibold text-ink">{station.name}</p>
         {playing ? (

@@ -176,6 +176,7 @@ export default function NowPlayingSheet({
           <div className="mt-5 flex justify-center">
             <StationLogo
               src={current.favicon}
+              fallbackSrc={current.faviconAlt}
               name={current.name}
               size={280}
               className="h-auto w-full max-w-[280px] rounded-[30px] shadow-2xl shadow-brand/30"
@@ -309,7 +310,7 @@ export default function NowPlayingSheet({
                 onClick={next}
                 className="mt-2 flex w-full items-center gap-3 rounded-[14px] border border-border bg-surface px-2.5 py-2 text-left transition hover:border-brand-2/50"
               >
-                <StationLogo src={upNext.favicon} name={upNext.name} size={32} className="h-8 w-8 shrink-0" />
+                <StationLogo src={upNext.favicon} fallbackSrc={upNext.faviconAlt} name={upNext.name} size={32} className="h-8 w-8 shrink-0" />
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-[12.5px] font-semibold text-ink">
                     {upNext.name}

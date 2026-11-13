@@ -29,7 +29,7 @@ export default function PlayerChrome({ total }: { total: number }) {
         className="fixed inset-x-4 bottom-[calc(5.375rem+max(0.875rem,env(safe-area-inset-bottom)))] z-40 cursor-pointer md:inset-x-auto md:bottom-6 md:right-6 md:w-[370px]"
       >
         <div className="mx-auto flex h-[68px] max-w-[370px] items-center gap-3 rounded-[22px] border border-border bg-surface px-3 shadow-xl shadow-brand/10">
-          <StationLogo src={current.favicon} name={current.name} size={44} className="h-11 w-11 shrink-0" />
+          <StationLogo src={current.favicon} fallbackSrc={current.faviconAlt} name={current.name} size={44} className="h-11 w-11 shrink-0" />
           <div className="min-w-0 flex-1">
             <Link
               href={`/station/${current.slug}`}

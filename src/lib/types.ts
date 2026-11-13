@@ -33,4 +33,4 @@ export type PublicStation = Pick<
   | "bitrate"
   | "favicon"
   | "votes"
-> & { stream: string; hls: boolean; playedAt?: number };
+> & { stream: string; hls: boolean; playedAt?: number; faviconAlt?: string };

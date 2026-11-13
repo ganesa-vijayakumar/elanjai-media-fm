@@ -15,6 +15,7 @@ export default function StationCard({ station }: { station: PublicStation }) {
       <div className="relative">
         <StationLogo
           src={station.favicon}
+          fallbackSrc={station.faviconAlt}
           name={station.name}
           size={200}
           className="aspect-square w-full"

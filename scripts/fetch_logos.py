@@ -17,6 +17,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 OUT = os.path.join(ROOT, "public", "logos")
 MANIFEST = os.path.join(ROOT, "data", "local-logos.json")
+GENSET = os.path.join(ROOT, "data", ".generated-logos.json")
 SIZE = 256
 
 ctx = ssl.create_default_context()
@@ -32,10 +33,19 @@ FONT_CANDIDATES = [r"C:\Windows\Fonts\segoeuib.ttf", r"C:\Windows\Fonts\arialbd.
                    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"]
 
 
-def fetch(url, binary=True, timeout=10):
-    req = urllib.request.Request(url, headers={
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ElanjaiFM/1.0"})
-    return urllib.request.urlopen(req, timeout=timeout, context=ctx).read()
+def fetch(url, binary=True, timeout=10, max_bytes=4_000_000, tries=3):
+    import time
+    last = None
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ElanjaiFM/1.0"})
+            # cap the read — a "homepage" that is actually a stream never ends
+            return urllib.request.urlopen(req, timeout=timeout, context=ctx).read(max_bytes)
+        except Exception as e:
+            last = e
+            time.sleep(1.5 * (i + 1))
+    raise last
 
 
 def to_png(raw):
@@ -144,16 +154,34 @@ def main():
     manifest = {}
     if os.path.exists(MANIFEST):
         manifest = json.load(open(MANIFEST, encoding="utf-8"))
+    genset = set()
+    if os.path.exists(GENSET):
+        genset = set(json.load(open(GENSET, encoding="utf-8")))
     stats = {}
     for genre in genres:
-        todo = [(s, genre, i) for i, s in enumerate(
-            x for x in stations if x.get("genre") == genre and x.get("is_active"))]
-        with concurrent.futures.ThreadPoolExecutor(max_workers=16) as ex:
+        todo = []
+        for i, s in enumerate(
+            x for x in stations if x.get("genre") == genre and x.get("is_active")):
+            p = os.path.join(OUT, genre, f"{s['slug']}.png")
+            # re-run only what's missing or was a generated placeholder
+            if os.path.exists(p) and s["slug"] not in genset:
+                manifest[s["slug"]] = f"/logos/{genre}/{s['slug']}.png"
+                continue
+            todo.append((s, genre, i))
+        print(f"{genre}: {len(todo)} to fetch "
+              f"({sum(1 for s,g,i in todo if s['slug'] in genset)} placeholders)")
+        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
             for slug, path, how in ex.map(process, todo):
                 manifest[slug] = path
                 stats[how] = stats.get(how, 0) + 1
+                if how == "generated":
+                    genset.add(slug)
+                else:
+                    genset.discard(slug)
     with open(MANIFEST, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=1, sort_keys=True)
+    with open(GENSET, "w", encoding="utf-8") as f:
+        json.dump(sorted(genset), f, indent=1)
     print(f"{sum(stats.values())} logos -> {OUT} | {stats}")
 
 

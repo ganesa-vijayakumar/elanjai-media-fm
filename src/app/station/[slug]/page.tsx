@@ -98,7 +98,8 @@ export default async function StationPage({ params }: Props) {
         <div className="relative md:flex md:items-center md:gap-6">
           <div className="flex items-start justify-between gap-3">
             <StationLogo
-              src={s.favicon}
+              src={pub.favicon}
+              fallbackSrc={pub.faviconAlt}
               name={s.name}
               size={84}
               className="h-[84px] w-[84px] shrink-0 md:h-[120px] md:w-[120px]"

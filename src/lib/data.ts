@@ -1,5 +1,6 @@
 import stationsJson from "../../data/stations.json";
 import genresJson from "../../data/genres.json";
+import localLogosJson from "../../data/local-logos.json";
 import type { Genre, PublicStation, Station } from "./types";
 
 const stations = stationsJson as Station[];
@@ -15,7 +16,10 @@ export function playableUrl(streamUrl: string): string {
   return `/api/stream?u=${Buffer.from(streamUrl).toString("base64url")}`;
 }
 
+const localLogos = localLogosJson as Record<string, string>;
+
 export function toPublic(s: Station): PublicStation {
+  const local = localLogos[s.slug];
   return {
     id: s.id,
     name: s.name,
@@ -25,7 +29,8 @@ export function toPublic(s: Station): PublicStation {
     country: s.country,
     codec: s.codec,
     bitrate: s.bitrate,
-    favicon: s.favicon,
+    favicon: local ?? s.favicon,
+    faviconAlt: local ? s.favicon : undefined,
     votes: s.votes,
     stream: playableUrl(s.stream_url),
     hls: /\.m3u8?($|\?)/i.test(s.stream_url),

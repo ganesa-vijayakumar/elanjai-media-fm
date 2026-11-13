@@ -5168,5 +5168,1956 @@
    "christian teaching"
   ],
   "is_active": true
+ },
+ {
+  "id": "hello-fm",
+  "name": "Hello FM",
+  "slug": "hello-fm",
+  "stream_url": "https://listen.openstream.co/4428/audio",
+  "homepage": "https://radiosindia.com/hellofm.html",
+  "favicon": "https://radiosindia.com/images/hellofm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "radio-mirchi",
+  "name": "Radio Mirchi",
+  "slug": "radio-mirchi",
+  "stream_url": "httpS://stream.zeno.fm/ak6km39gg0quv",
+  "homepage": "https://radiosindia.com/radiomirchitamil.html",
+  "favicon": "https://radiosindia.com/images/radiomirchi.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "suryan-fm",
+  "name": "Suryan FM",
+  "slug": "suryan-fm",
+  "stream_url": "https://listen.openstream.co/6714/audio",
+  "homepage": "https://radiosindia.com/suryanfm.html",
+  "favicon": "https://radiosindia.com/images/suryanfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 24,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "radio-gilli",
+  "name": "Radio Gilli",
+  "slug": "radio-gilli",
+  "stream_url": "https://stream1.rcast.net/73058",
+  "homepage": "https://radiosindia.com/radiogilli.html",
+  "favicon": "https://radiosindia.com/images/radiogilli123.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "shakthi-fm",
+  "name": "Shakthi FM",
+  "slug": "shakthi-fm",
+  "stream_url": "https://mbc.thestreamtech.com:8086/index.html",
+  "homepage": "https://radiosindia.com/shakthifm.html",
+  "favicon": "https://radiosindia.com/images/shakthifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "east-fm",
+  "name": "East FM",
+  "slug": "east-fm",
+  "stream_url": "https://centova.radioservers.biz/proxy/eastfmc1/stream",
+  "homepage": "https://radiosindia.com/eastfm.html",
+  "favicon": "https://radiosindia.com/images/eastfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "trt-tamil-oli",
+  "name": "TRT Tamil Oli",
+  "slug": "trt-tamil-oli",
+  "stream_url": "https://radio13.pro-fhi.net:19236/stream.mp3",
+  "homepage": "https://radiosindia.com/trttamiloli.html",
+  "favicon": "https://radiosindia.com/images/trttamiloli.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "us-tamil-fm",
+  "name": "US TAMIL FM",
+  "slug": "us-tamil-fm",
+  "stream_url": "https://streaming.radio.co/s0cfc93915/listen",
+  "homepage": "https://radiosindia.com/ustamilfm.html",
+  "favicon": "https://radiosindia.com/images/ustamilfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "saaral-fm",
+  "name": "Saaral FM",
+  "slug": "saaral-fm",
+  "stream_url": "https://saaralfm-adithyamedia.radioca.st/stream",
+  "homepage": "https://radiosindia.com/saaralfm.html",
+  "favicon": "https://radiosindia.com/images/saaralfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "a9-new-hits",
+  "name": "A9 New Hits",
+  "slug": "a9-new-hits",
+  "stream_url": "https://a9newhits-a9media.radioca.st/stream",
+  "homepage": "https://radiosindia.com/a9radionewhits.html",
+  "favicon": "https://radiosindia.com/images/a9radio.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "vanakkam-fm",
+  "name": "Vanakkam FM",
+  "slug": "vanakkam-fm",
+  "stream_url": "https://streamlky.alsolnet.com/vanakkamaudio",
+  "homepage": "https://radiosindia.com/vanakkamfm.html",
+  "favicon": "https://radiosindia.com/images/vanakkamfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "natham-fm",
+  "name": "Natham FM",
+  "slug": "natham-fm",
+  "stream_url": "https://server1.mahamediacast.com/proxy/nathamcityfm/stream",
+  "homepage": "https://radiosindia.com/nathamcityfm.html",
+  "favicon": "https://radiosindia.com/images/nathamcityfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "itr-fm",
+  "name": "ITR FM",
+  "slug": "itr-fm",
+  "stream_url": "https://radio5.pro-fhi.net/flux-hgtidrcv/stream",
+  "homepage": "https://radiosindia.com/itr.html",
+  "favicon": "https://radiosindia.com/images/itr.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "arasan-fm",
+  "name": "Arasan FM",
+  "slug": "arasan-fm",
+  "stream_url": "https://arasanradiostnd.radioca.st/stream",
+  "homepage": "https://radiosindia.com/arasanfm.html",
+  "favicon": "https://radiosindia.com/images/arasanfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "natrinai-fm",
+  "name": "Natrinai FM",
+  "slug": "natrinai-fm",
+  "stream_url": "https://centova32.instainternet.com/proxy/sasi?mp=/1",
+  "homepage": "https://radiosindia.com/natrinaifm.html",
+  "favicon": "https://radiosindia.com/images/natrinai.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "pudhugai-fm",
+  "name": "Pudhugai FM",
+  "slug": "pudhugai-fm",
+  "stream_url": "https://cast3.asurahosting.com/proxy/pudhugai/stream",
+  "homepage": "https://radiosindia.com/pudhugaifm.html",
+  "favicon": "https://radiosindia.com/images/pudhugaifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "beat-love",
+  "name": "Beat Love",
+  "slug": "beat-love",
+  "stream_url": "https://strw3.openstream.co/1993",
+  "homepage": "https://radiosindia.com/radiobeatlove.html",
+  "favicon": "https://radiosindia.com/images/radiobeatlove.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 192,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "roobam-fm",
+  "name": "Roobam FM",
+  "slug": "roobam-fm",
+  "stream_url": "https://s3.radio.co/sadfae7495/listen",
+  "homepage": "https://radiosindia.com/roobamfm.html",
+  "favicon": "https://radiosindia.com/images/roobamfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "thamizhini-fm",
+  "name": "Thamizhini FM",
+  "slug": "thamizhini-fm",
+  "stream_url": "https://fm.thamizhinifm.com/listen/thamizhinifm.com/radio.mp3",
+  "homepage": "https://radiosindia.com/thamizhinifm.html",
+  "favicon": "https://radiosindia.com/images/thamizhinifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 192,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "tamil-osai-fm",
+  "name": "Tamil Osai FM",
+  "slug": "tamil-osai-fm",
+  "stream_url": "https://stream.rcs.revma.com/0bprm5vbv4uvv",
+  "homepage": "https://radiosindia.com/tamilosaifm.html",
+  "favicon": "https://radiosindia.com/images/tamilosaifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "radio-vaanam",
+  "name": "Radio Vaanam",
+  "slug": "radio-vaanam",
+  "stream_url": "https://sathees.radioca.st/;",
+  "homepage": "https://radiosindia.com/radiovaanam.html",
+  "favicon": "https://radiosindia.com/images/radiovaanam.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "azhagi-fm",
+  "name": "Azhagi FM",
+  "slug": "azhagi-fm",
+  "stream_url": "https://server1.mahamediacast.com/proxy/azhagifm/stream",
+  "homepage": "https://radiosindia.com/azhagifm.html",
+  "favicon": "https://radiosindia.com/images/azhagifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 320,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "isai-thoorikai",
+  "name": "Isai Thoorikai",
+  "slug": "isai-thoorikai",
+  "stream_url": "https://osaicast1.angalainnovations.in/listen/isaithoorikai/radio.mp3",
+  "homepage": "https://radiosindia.com/isaithoorikai.html",
+  "favicon": "https://radiosindia.com/images/isaithoorikai.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "radio-beat",
+  "name": "Radio Beat",
+  "slug": "radio-beat",
+  "stream_url": "https://listen.openstream.co/3372/audio",
+  "homepage": "https://radiosindia.com/radiobeat.html",
+  "favicon": "https://radiosindia.com/images/radiobeat.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 192,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "idhayam-fm",
+  "name": "Idhayam FM",
+  "slug": "idhayam-fm",
+  "stream_url": "https://server1.mahamediacast.com/proxy/idhayamfm/stream",
+  "homepage": "https://radiosindia.com/idhayamfm.html",
+  "favicon": "https://radiosindia.com/images/idhayamfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 320,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "pasanga-fm",
+  "name": "Pasanga FM",
+  "slug": "pasanga-fm",
+  "stream_url": "https://s7.voscast.com/cdn/?k=68ebe2f19c920&m=;stream1760289678470/1",
+  "homepage": "https://radiosindia.com/pasangafm.html",
+  "favicon": "https://radiosindia.com/images/pasangafm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "dance-tamizha",
+  "name": "dance tamizha",
+  "slug": "dance-tamizha",
+  "stream_url": "https://listen.openstream.co/3558/audio",
+  "homepage": "https://radiosindia.com/dancetamizha.html",
+  "favicon": "https://radiosindia.com/images/dancetamizha.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "arni-city-fm",
+  "name": "Arni City FM",
+  "slug": "arni-city-fm",
+  "stream_url": "https://usa9.fastcast4u.com/proxy/arnifm?mp=/1",
+  "homepage": "https://radiosindia.com/arnicityfm.html",
+  "favicon": "https://radiosindia.com/images/arnicityfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "thendral-fm",
+  "name": "Thendral FM",
+  "slug": "thendral-fm",
+  "stream_url": "http://220.247.227.20:8000/Threndralstream",
+  "homepage": "https://radiosindia.com/thendralfm.html",
+  "favicon": "https://radiosindia.com/images/thendralradio.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "vasantham",
+  "name": "Vasantham",
+  "slug": "vasantham",
+  "stream_url": "https://cp12.serverse.com/proxy/vasanthamfm?mp=/stream",
+  "homepage": "https://radiosindia.com/vasanthamfm.html",
+  "favicon": "https://radiosindia.com/images/vasanthamfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "radio-apj",
+  "name": "Radio APJ",
+  "slug": "radio-apj",
+  "stream_url": "https://centova47.instainternet.com/proxy/radioapj/stream",
+  "homepage": "https://radiosindia.com/radioapj.html",
+  "favicon": "https://radiosindia.com/images/radioapj.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "thadam-fm",
+  "name": "Thadam FM",
+  "slug": "thadam-fm",
+  "stream_url": "https://ec7.yesstreaming.net:1865/stream",
+  "homepage": "https://radiosindia.com/thadamfm.html",
+  "favicon": "https://radiosindia.com/images/thadamfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 320,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "time-fm",
+  "name": "Time FM",
+  "slug": "time-fm",
+  "stream_url": "https://neramfm.com:8008/stream",
+  "homepage": "https://radiosindia.com/timefm.html",
+  "favicon": "https://radiosindia.com/images/timefm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "a-9-radio",
+  "name": "A 9 Radio",
+  "slug": "a-9-radio",
+  "stream_url": "https://a9radio1-a9media.radioca.st/stream",
+  "homepage": "https://radiosindia.com/a9radio.html",
+  "favicon": "https://radiosindia.com/images/a9radio.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "thenaruvi-fm",
+  "name": "Thenaruvi FM",
+  "slug": "thenaruvi-fm",
+  "stream_url": "https://thenaruvivaanoli.radioca.st/stream",
+  "homepage": "https://radiosindia.com/thenaruvifm.html",
+  "favicon": "https://radiosindia.com/images/thenaruvifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 96,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "retro-fm",
+  "name": "Retro FM",
+  "slug": "retro-fm",
+  "stream_url": "https://cast6.asurahosting.com/proxy/retrotamil/stream",
+  "homepage": "https://radiosindia.com/tamilretrofm.html",
+  "favicon": "https://radiosindia.com/images/tamilretrofm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "erode-jai-fm",
+  "name": "Erode Jai FM",
+  "slug": "erode-jai-fm",
+  "stream_url": "https://erodejaifm-prabak78.radioca.st/stream",
+  "homepage": "https://radiosindia.com/erodejaifm.html",
+  "favicon": "https://radiosindia.com/images/erodejaifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "radio-dhool",
+  "name": "Radio Dhool",
+  "slug": "radio-dhool",
+  "stream_url": "https://audio-edge-hy4wy.blr.d.radiomast.io/19571931-e4a1-435d-88be-dc1756362ed3",
+  "homepage": "https://radiosindia.com/radiodhool.html",
+  "favicon": "https://radiosindia.com/images/radiodhool.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "isaiyaruvi-fm",
+  "name": "Isaiyaruvi FM",
+  "slug": "isaiyaruvi-fm",
+  "stream_url": "https://cp1.hostcrate.com/8910/stream",
+  "homepage": "https://radiosindia.com/isaiyaruvifm.html",
+  "favicon": "https://radiosindia.com/images/isaiyaruvifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "tamil-ai-fm",
+  "name": "Tamil AI FM",
+  "slug": "tamil-ai-fm",
+  "stream_url": "https://servidor23-4.brlogic.com:7072/live?source=website",
+  "homepage": "https://radiosindia.com/tamilaifm.html",
+  "favicon": "https://radiosindia.com/images/tamilaifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "muslim-vaanoli",
+  "name": "Muslim Vaanoli",
+  "slug": "muslim-vaanoli",
+  "stream_url": "https://stream.muslimvanoli.com:1035/stream",
+  "homepage": "https://radiosindia.com/muslimvaanoli.html",
+  "favicon": "https://radiosindia.com/images/muslimradio.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 320,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "kathiravan-fm",
+  "name": "Kathiravan FM",
+  "slug": "kathiravan-fm",
+  "stream_url": "https://kathiravanfm-prabak78.radioca.st/stream",
+  "homepage": "https://radiosindia.com/kathiravanfm.html",
+  "favicon": "https://radiosindia.com/images/kathiravanfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "adirai-fm",
+  "name": "Adirai FM",
+  "slug": "adirai-fm",
+  "stream_url": "https://listen.radioking.com/radio/188161/stream/230320",
+  "homepage": "https://radiosindia.com/adiraifm.html",
+  "favicon": "https://radiosindia.com/images/adiraifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "abinayam-fm",
+  "name": "Abinayam FM",
+  "slug": "abinayam-fm",
+  "stream_url": "https://usa11.fastcast4u.com/proxy/ajaydk?mp=/;",
+  "homepage": "https://radiosindia.com/abinayamfm.html",
+  "favicon": "https://radiosindia.com/images/abinayamfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "sirpi-fm",
+  "name": "Sirpi FM",
+  "slug": "sirpi-fm",
+  "stream_url": "https://sirpifmhd-unicast2u.radioca.st/stream",
+  "homepage": "https://radiosindia.com/sirpifm.html",
+  "favicon": "https://radiosindia.com/images/sirpifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "pothigai-fm",
+  "name": "Pothigai FM",
+  "slug": "pothigai-fm",
+  "stream_url": "http://perseverance.shoutca.st:8131/stream",
+  "homepage": "https://radiosindia.com/pothigaifm.html",
+  "favicon": "https://radiosindia.com/images/pothigaifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "thiruvarur-fm",
+  "name": "Thiruvarur FM",
+  "slug": "thiruvarur-fm",
+  "stream_url": "https://thiruvarurfm-prabak78.radioca.st/stream",
+  "homepage": "https://radiosindia.com/thiruvarurfm.html",
+  "favicon": "https://radiosindia.com/images/thiruvarurfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "ss-radio",
+  "name": "SS Radio",
+  "slug": "ss-radio",
+  "stream_url": "https://cast6.asurahosting.com/proxy/ssradio/stream",
+  "homepage": "https://radiosindia.com/ssradionatham.html",
+  "favicon": "https://radiosindia.com/images/ssradionatham.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "amaravathi-fm",
+  "name": "Amaravathi FM",
+  "slug": "amaravathi-fm",
+  "stream_url": "https://mrtradiofm-adithyamedia.radioca.st/stream",
+  "homepage": "https://radiosindia.com/amaravathifm.html",
+  "favicon": "https://radiosindia.com/images/amaravathifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 320,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "south-side-fm",
+  "name": "South Side FM",
+  "slug": "south-side-fm",
+  "stream_url": "https://southsidefmkzn.out.airtime.pro/southsidefmkzn_a",
+  "homepage": "https://radiosindia.com/southsidefm.html",
+  "favicon": "https://radiosindia.com/images/southsidefm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 96,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "a9-old-hits",
+  "name": "A9 Old Hits",
+  "slug": "a9-old-hits",
+  "stream_url": "https://a9oldhits-a9media.radioca.st/stream",
+  "homepage": "https://radiosindia.com/a9radiooldhits.html",
+  "favicon": "https://radiosindia.com/images/a9radio.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "star-fm",
+  "name": "Star FM",
+  "slug": "star-fm",
+  "stream_url": "https://stream.starfm.lk:12025/stream",
+  "homepage": "https://radiosindia.com/starfm.html",
+  "favicon": "https://radiosindia.com/images/starfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 320,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "jtr-fm",
+  "name": "JTR FM",
+  "slug": "jtr-fm",
+  "stream_url": "http://jtrfm.ddnss.de:8000/;stream.mp3",
+  "homepage": "https://radiosindia.com/jtrfm.html",
+  "favicon": "https://radiosindia.com/images/jtrfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "radio-petti",
+  "name": "Radio Petti",
+  "slug": "radio-petti",
+  "stream_url": "https://radiopetti.in/radio.mp3",
+  "homepage": "https://radiosindia.com/radiopetti.html",
+  "favicon": "https://radiosindia.com/images/radiopetti1.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 192,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "pothikai-fm",
+  "name": "Pothikai FM",
+  "slug": "pothikai-fm",
+  "stream_url": "https://mars.streamerr.co/8274/stream",
+  "homepage": "https://radiosindia.com/pothikaifm.html",
+  "favicon": "https://radiosindia.com/images/pothikaifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "cholai-fm",
+  "name": "Cholai FM",
+  "slug": "cholai-fm",
+  "stream_url": "https://liveradio.tcradio.net/listen/listentamil_cholai_online_2.0tamilcholai/liveradio.tcradio.net",
+  "homepage": "https://radiosindia.com/tamilcholai.html",
+  "favicon": "https://radiosindia.com/images/tamilcholai.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "vigashini-fm",
+  "name": "Vigashini FM",
+  "slug": "vigashini-fm",
+  "stream_url": "https://ic.vigashinifm.com/vigashinifm.mp3",
+  "homepage": "https://radiosindia.com/vigashinifm.html",
+  "favicon": "https://radiosindia.com/images/vigashinifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "kovai-city-fm",
+  "name": "Kovai City FM",
+  "slug": "kovai-city-fm",
+  "stream_url": "https://cast6.asurahosting.com/proxy/covaicityfm/stream",
+  "homepage": "https://radiosindia.com/kovaicityfm.html",
+  "favicon": "https://radiosindia.com/images/covaicityfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "namathu-fm",
+  "name": "Namathu FM",
+  "slug": "namathu-fm",
+  "stream_url": "https://s3.voscast.com:10527/stream",
+  "homepage": "https://radiosindia.com/namathufm.html",
+  "favicon": "https://radiosindia.com/images/namathufm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "radio-008-fm",
+  "name": "Radio 008 FM",
+  "slug": "radio-008-fm",
+  "stream_url": "https://radio008fm-prabak78.radioca.st/stream",
+  "homepage": "https://radiosindia.com/radio008fm.html",
+  "favicon": "https://radiosindia.com/images/radio008fm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "big-fm-jaffna",
+  "name": "Big FM Jaffna",
+  "slug": "big-fm-jaffna",
+  "stream_url": "https://s5.voscast.com:9539/s5.voscast.com",
+  "homepage": "https://radiosindia.com/bigfmjaffna.html",
+  "favicon": "https://radiosindia.com/images/bigfmjaffna.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "ceylon-fm",
+  "name": "Ceylon FM",
+  "slug": "ceylon-fm",
+  "stream_url": "https://cast1.asurahosting.com/proxy/ceylont1/stream",
+  "homepage": "https://radiosindia.com/ceylontamilfm.html",
+  "favicon": "https://radiosindia.com/images/ceylontamilfm1.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 192,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "radio-maaza",
+  "name": "Radio Maaza",
+  "slug": "radio-maaza",
+  "stream_url": "https://ec3.yesstreaming.net:2205/stream",
+  "homepage": "https://radiosindia.com/radiomaaza.html",
+  "favicon": "https://radiosindia.com/images/radiomaaza.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "madurai-fm",
+  "name": "Madurai FM",
+  "slug": "madurai-fm",
+  "stream_url": "https://maduraivoicefm-prabak78.radioca.st/stream",
+  "homepage": "https://radiosindia.com/maduraivoicefm.html",
+  "favicon": "https://radiosindia.com/images/maduraivoicefm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "siragugal-fm",
+  "name": "Siragugal FM",
+  "slug": "siragugal-fm",
+  "stream_url": "https://sonic-ca.instainternet.com/siragugalfm/stream",
+  "homepage": "https://radiosindia.com/siragugalfmlanka.html",
+  "favicon": "https://radiosindia.com/images/siragugalfmlk.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "megazone-fm",
+  "name": "Megazone FM",
+  "slug": "megazone-fm",
+  "stream_url": "https://vm65162.streamerr.co/listen/megazone_south/radio.mp3",
+  "homepage": "https://radiosindia.com/megazonesouth.html",
+  "favicon": "https://radiosindia.com/images/megazonesouthnew.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "gtr-fm",
+  "name": "GTR FM",
+  "slug": "gtr-fm",
+  "stream_url": "https://eu4.fastcast4u.com/proxy/goguna00?mp=/;",
+  "homepage": "https://radiosindia.com/gtrfm.html",
+  "favicon": "https://radiosindia.com/images/gtrfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "ctr-24",
+  "name": "CTR 24",
+  "slug": "ctr-24",
+  "stream_url": "https://ctr24-backend.vercel.app/api/stream/live",
+  "homepage": "https://radiosindia.com/ctr24.html",
+  "favicon": "https://radiosindia.com/images/ctr24.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "aadhi-tamil-fm",
+  "name": "Aadhi Tamil FM",
+  "slug": "aadhi-tamil-fm",
+  "stream_url": "https://aadhitamilfm-prabak78.radioca.st/stream",
+  "homepage": "https://radiosindia.com/aadhitamilfm.html",
+  "favicon": "https://radiosindia.com/images/aadhitamilfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "ullasam-fm",
+  "name": "Ullasam FM",
+  "slug": "ullasam-fm",
+  "stream_url": "https://eu10.fastcast4u.com:6740/stream",
+  "homepage": "https://radiosindia.com/ullasamfm.html",
+  "favicon": "https://radiosindia.com/images/ullasamfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "vtr-fm",
+  "name": "VTR FM",
+  "slug": "vtr-fm",
+  "stream_url": "https://radio.massstream.net/8010/stream",
+  "homepage": "https://radiosindia.com/vtrfm.html",
+  "favicon": "https://radiosindia.com/images/vtrfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "thuli-fm",
+  "name": "Thuli FM",
+  "slug": "thuli-fm",
+  "stream_url": "https://s4.voscast.com:8735/stream",
+  "homepage": "https://radiosindia.com/thulifm.html",
+  "favicon": "https://radiosindia.com/images/thulifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "paaddu-fm",
+  "name": "Paaddu FM",
+  "slug": "paaddu-fm",
+  "stream_url": "https://sugu.radioca.st/stream/;stream/1",
+  "homepage": "https://radiosindia.com/paaddu.html",
+  "favicon": "https://radiosindia.com/images/paaddu.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "mtr-fm",
+  "name": "MTR FM",
+  "slug": "mtr-fm",
+  "stream_url": "https://radio.mediacp.eu/stream/mtr-fm/stream",
+  "homepage": "https://radiosindia.com/mtrfm.html",
+  "favicon": "https://radiosindia.com/images/mtrfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "ttr-fm",
+  "name": "TTR FM",
+  "slug": "ttr-fm",
+  "stream_url": "https://radio.massstream.net/8010/stream",
+  "homepage": "https://radiosindia.com/ttrfm.html",
+  "favicon": "https://radiosindia.com/images/ttrfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "atbc-radio",
+  "name": "ATBC Radio",
+  "slug": "atbc-radio",
+  "stream_url": "http://s7.viastreaming.net:7920/;stream.mp3",
+  "homepage": "https://radiosindia.com/atbctamil.html",
+  "favicon": "https://radiosindia.com/images/atbctamil.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "tamilnadu-fm",
+  "name": "Tamilnadu FM",
+  "slug": "tamilnadu-fm",
+  "stream_url": "https://c38.radioboss.fm:8077/stream",
+  "homepage": "https://radiosindia.com/tamilnadufm.html",
+  "favicon": "https://radiosindia.com/images/tamilnadufm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "radio-tamizha",
+  "name": "Radio Tamizha",
+  "slug": "radio-tamizha",
+  "stream_url": "https://c22.radioboss.fm:8832/stream",
+  "homepage": "https://radiosindia.com/radiotamizha.html",
+  "favicon": "https://radiosindia.com/images/radiotamizha.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 320,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "yaal-fm",
+  "name": "Yaal FM",
+  "slug": "yaal-fm",
+  "stream_url": "http://220.247.227.6:8000/Yaalstream",
+  "homepage": "https://radiosindia.com/yaalfm.html",
+  "favicon": "https://radiosindia.com/images/yaalfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "radio-lime",
+  "name": "Radio Lime",
+  "slug": "radio-lime",
+  "stream_url": "https://s5.radio.co/sa8b2e14b5/listen",
+  "homepage": "https://radiosindia.com/radiolimetamil.html",
+  "favicon": "https://radiosindia.com/images/radiolime.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "tamil-murasam-radio",
+  "name": "Tamil Murasam Radio",
+  "slug": "tamil-murasam-radio",
+  "stream_url": "https://tamilmurasam.radioca.st/stream",
+  "homepage": "https://radiosindia.com/tamilmurasam.html",
+  "favicon": "https://radiosindia.com/images/tamilmurasam.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 160,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "cmr-fm",
+  "name": "CMR FM",
+  "slug": "cmr-fm",
+  "stream_url": "https://live.cmr24.net/CMR/TamilHD-HQ/icecast.audio",
+  "homepage": "https://radiosindia.com/cmrthamilfm.html",
+  "favicon": "https://radiosindia.com/images/cmrthamilfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "inba-thamil-oli",
+  "name": "inba thamil oli",
+  "slug": "inba-thamil-oli",
+  "stream_url": "https://usa7.fastcast4u.com/proxy/ozmediae?mp=/1",
+  "homepage": "https://radiosindia.com/inbathamiloli.html",
+  "favicon": "https://radiosindia.com/images/inbathamiloli.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 56,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "naga-fm",
+  "name": "Naga FM",
+  "slug": "naga-fm",
+  "stream_url": "https://live.nagafm.in:1065/stream",
+  "homepage": "https://radiosindia.com/nagafm.html",
+  "favicon": "https://radiosindia.com/images/nagafm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "punnagai-fm",
+  "name": "Punnagai FM",
+  "slug": "punnagai-fm",
+  "stream_url": "https://sp.radiotamilonline.com/8146/stream",
+  "homepage": "https://radiosindia.com/punnagaifm.html",
+  "favicon": "https://radiosindia.com/images/punnakaifm1.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "a1-radio",
+  "name": "A1 Radio",
+  "slug": "a1-radio",
+  "stream_url": "https://ec3.yesstreaming.net:1190/stream",
+  "homepage": "https://radiosindia.com/a1tamilradio.html",
+  "favicon": "https://radiosindia.com/images/a1tamilradio1.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "rajarajan-fm",
+  "name": "Rajarajan FM",
+  "slug": "rajarajan-fm",
+  "stream_url": "https://rajarajanfm-prabak78.radioca.st/stream",
+  "homepage": "https://radiosindia.com/rajarajanfm.html",
+  "favicon": "https://radiosindia.com/images/rajarajanfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "ss-sivagangai",
+  "name": "SS Sivagangai",
+  "slug": "ss-sivagangai",
+  "stream_url": "https://cast6.asurahosting.com/proxy/sstamilradio/stream?n=e65242363afe40d9f404",
+  "homepage": "https://radiosindia.com/sstamilradiosivagangai.html",
+  "favicon": "https://radiosindia.com/images/ssradiosivagangai.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "sunlite-fm",
+  "name": "Sunlite FM",
+  "slug": "sunlite-fm",
+  "stream_url": "https://njsunrise.out.airtime.pro/njsunrise_a",
+  "homepage": "https://radiosindia.com/sunlitefm.html",
+  "favicon": "https://radiosindia.com/images/sunlitefm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "subiksha-fm",
+  "name": "Subiksha FM",
+  "slug": "subiksha-fm",
+  "stream_url": "https://usa8.fastcast4u.com/proxy/subikshafm?mp=/1",
+  "homepage": "https://radiosindia.com/subikshafm.html",
+  "favicon": "https://radiosindia.com/images/subikshafm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "vaagai-fm",
+  "name": "Vaagai FM",
+  "slug": "vaagai-fm",
+  "stream_url": "https://vaagai.radioca.st/stream2/listen#.mp3",
+  "homepage": "https://radiosindia.com/vaagaifm.html",
+  "favicon": "https://radiosindia.com/images/vaagaifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "vaigai-fm",
+  "name": "Vaigai FM",
+  "slug": "vaigai-fm",
+  "stream_url": "https://centova1.dribbcast.com/proxy/vaigaifm/stream",
+  "homepage": "https://radiosindia.com/vaigaifm.html",
+  "favicon": "https://radiosindia.com/images/vaigaifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "valasai-vanoli",
+  "name": "Valasai Vanoli",
+  "slug": "valasai-vanoli",
+  "stream_url": "https://cast6.asurahosting.com/proxy/valasaivanoli/stream",
+  "homepage": "https://radiosindia.com/valasaivanoli.html",
+  "favicon": "https://radiosindia.com/images/valasaivanoli.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "kodai-aruvi-fm",
+  "name": "Kodai Aruvi FM",
+  "slug": "kodai-aruvi-fm",
+  "stream_url": "https://cast6.asurahosting.com/proxy/kodaiaruvifm/stream",
+  "homepage": "https://radiosindia.com/kodaiaruvifm.html",
+  "favicon": "https://radiosindia.com/images/kodaiaruvifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "vetrivel-fm",
+  "name": "Vetrivel FM",
+  "slug": "vetrivel-fm",
+  "stream_url": "http://136.243.44.41:8468/stream",
+  "homepage": "https://radiosindia.com/vetrivelfm.html",
+  "favicon": "https://radiosindia.com/images/vetrivelfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "kadarkarai-fm",
+  "name": "Kadarkarai FM",
+  "slug": "kadarkarai-fm",
+  "stream_url": "https://kadarkaraifm-prabak78.radioca.st/stream",
+  "homepage": "https://radiosindia.com/kadarkaraifm.html",
+  "favicon": "https://radiosindia.com/images/kadarkaraifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "devakottai-fm",
+  "name": "Devakottai FM",
+  "slug": "devakottai-fm",
+  "stream_url": "http://192.95.39.65/proxy/devakottaifm?mp=/1",
+  "homepage": "https://radiosindia.com/devakottaifm.html",
+  "favicon": "https://radiosindia.com/images/devakottaifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "akkini-fm",
+  "name": "Akkini FM",
+  "slug": "akkini-fm",
+  "stream_url": "https://akkinifm-unicast2u.radioca.st/stream",
+  "homepage": "https://radiosindia.com/akkinifm.html",
+  "favicon": "https://radiosindia.com/images/akkinifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "rj-tamil-fm",
+  "name": "RJ Tamil FM",
+  "slug": "rj-tamil-fm",
+  "stream_url": "https://cast6.asurahosting.com/proxy/rjtamil/live",
+  "homepage": "https://radiosindia.com/rjtamilfm.html",
+  "favicon": "https://radiosindia.com/images/rjtamilfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "AAC",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "surabi-fm",
+  "name": "Surabi FM",
+  "slug": "surabi-fm",
+  "stream_url": "https://tamilsurabifm-prabak78.radioca.st/stream",
+  "homepage": "https://radiosindia.com/tamilsurabifm.html",
+  "favicon": "https://radiosindia.com/images/tamilsurabifm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 64,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "24-gold-fm",
+  "name": "24 Gold FM",
+  "slug": "24-gold-fm",
+  "stream_url": "https://cast6.asurahosting.com/proxy/24goldfm/stream",
+  "homepage": "https://radiosindia.com/24goldfm.html",
+  "favicon": "https://radiosindia.com/images/24goldfm.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "UNKNOWN",
+  "bitrate": 0,
+  "votes": 0,
+  "tags": [
+   "tamil"
+  ],
+  "is_active": false
+ },
+ {
+  "id": "clubhouse-tamil-90s-2k-vibes",
+  "name": "Clubhouse Tamil 90s & 2K Vibes",
+  "slug": "clubhouse-tamil-90s-2k-vibes",
+  "stream_url": "https://liveradio.swaggerbeat.com:8100/stream",
+  "homepage": "https://www.tamilradios.com/clubhouse-tamil-90s-2k-vibes",
+  "favicon": "https://dev.tamilradios.com/api/files/7c3b2754-6481-465e-8fb6-9b91ec20bb7d.png",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "online fm",
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "jipmer-radio",
+  "name": "Jipmer Radio",
+  "slug": "jipmer-radio",
+  "stream_url": "https://d1d1ao70vmf9ux.cloudfront.net/jipmer.m3u8",
+  "homepage": "https://www.tamilradios.com/jipmer-radio",
+  "favicon": "/api/files/99280d03-c119-4d57-bf64-df5413e3d356.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "online fm",
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "news18-tamil-live",
+  "name": "News18 Tamil",
+  "slug": "news18-tamil-live",
+  "stream_url": "https://nw18live.cdn.jio.com/bpk-tv/News18_Tamil_Nadu_NW18_MOB/output01/index.m3u8",
+  "homepage": "https://www.tamilradios.com/news18-tamil-live",
+  "favicon": "/api/files/9527f5fe-26b7-497c-8be2-63b62d727be0.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "live",
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "polimer-news-live",
+  "name": "Polimer News",
+  "slug": "polimer-news-live",
+  "stream_url": "https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/polimernews_nim_https/110322/polimernews/playlist.m3u8",
+  "homepage": "https://www.tamilradios.com/polimer-news-live",
+  "favicon": "https://dev.tamilradios.com/api/files/a87b0326-22c9-46f9-b416-11570e102adb.png",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "live",
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "shaivam-radio",
+  "name": "Shaivam Radio",
+  "slug": "shaivam-radio",
+  "stream_url": "https://samcloud.spacial.com/api/listen?sid=107848&m=sc&rid=186695&t=ssl",
+  "homepage": "https://www.tamilradios.com/shaivam-radio",
+  "favicon": "/api/files/4f9084b6-3447-487d-8021-6ef6c40580ed.jpg",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "devotional",
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "sun-news-live",
+  "name": "Sun News",
+  "slug": "sun-news-live",
+  "stream_url": "https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/news7_nim_https/240122/news7/playlist.m3u8",
+  "homepage": "https://www.tamilradios.com/sun-news-live",
+  "favicon": "https://dev.tamilradios.com/api/files/ed92951e-8e61-4322-ba70-b84b1cc5f15a.png",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "live",
+   "tamil"
+  ],
+  "is_active": true
+ },
+ {
+  "id": "thenral-world-radio",
+  "name": "Thenral World Radio",
+  "slug": "thenral-world-radio",
+  "stream_url": "https://thenralw.radioca.st/LiveStream",
+  "homepage": "https://www.tamilradios.com/thenral-world-radio",
+  "favicon": "https://dev.tamilradios.com/api/files/de02198f-b4fa-4be7-8945-a4032f746bb3.png",
+  "genre": "tamil",
+  "language": "Tamil",
+  "country": "India",
+  "codec": "MP3",
+  "bitrate": 128,
+  "votes": 0,
+  "tags": [
+   "online fm",
+   "tamil"
+  ],
+  "is_active": true
  }
 ]

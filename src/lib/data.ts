@@ -32,8 +32,26 @@ export function toPublic(s: Station): PublicStation {
   };
 }
 
+/** Canonical language ordering — priority languages first, rest alphabetical. */
+const GENRE_ORDER = [
+  "india",
+  "tamil",
+  "hindi",
+  "telugu",
+  "malayalam",
+  "kannada",
+  "punjabi",
+];
+
 export const getStations = () => stations.filter((s) => s.is_active);
-export const getGenres = () => genres;
+export const getGenres = () =>
+  [...genres].sort((a, b) => {
+    const ia = GENRE_ORDER.indexOf(a.slug);
+    const ib = GENRE_ORDER.indexOf(b.slug);
+    if (ia !== -1 || ib !== -1)
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    return a.name.localeCompare(b.name);
+  });
 export const getGenre = (slug: string) =>
   genres.find((g) => g.slug === slug) ?? null;
 

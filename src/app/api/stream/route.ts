@@ -74,7 +74,11 @@ async function fetchUpstream(target: URL, range: string | null) {
   const timer = setTimeout(() => ctrl.abort(), UPSTREAM_HEADERS_TIMEOUT);
   try {
     const headers: Record<string, string> = {
-      "Icy-MetaData": "1",
+      // IMPORTANT: do NOT send Icy-MetaData: 1 here — it makes Icecast/Shoutcast
+      // splice metadata blocks into the audio bytes, which browsers play as
+      // noise bursts every icy-metaint bytes. Now-playing reads ICY on its own
+      // separate connection (see /api/now-playing).
+      "Icy-MetaData": "0",
       "User-Agent": "ElanjaiMediaFM/1.0",
     };
     if (range) headers.Range = range;

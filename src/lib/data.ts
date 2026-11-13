@@ -44,25 +44,45 @@ const GENRE_ORDER = [
 ];
 
 export const getStations = () => stations.filter((s) => s.is_active);
-export const getGenres = () =>
-  [...genres].sort((a, b) => {
-    const ia = GENRE_ORDER.indexOf(a.slug);
-    const ib = GENRE_ORDER.indexOf(b.slug);
-    if (ia !== -1 || ib !== -1)
-      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
-    return a.name.localeCompare(b.name);
-  });
+export const getGenres = () => {
+  const live = new Map<string, number>();
+  for (const s of getStations()) live.set(s.genre, (live.get(s.genre) ?? 0) + 1);
+  return genres
+    .map((g) => ({ ...g, count: live.get(g.slug) ?? 0 }))
+    .sort((a, b) => {
+      const ia = GENRE_ORDER.indexOf(a.slug);
+      const ib = GENRE_ORDER.indexOf(b.slug);
+      if (ia !== -1 || ib !== -1)
+        return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+      return a.name.localeCompare(b.name);
+    });
+};
 export const getGenre = (slug: string) =>
-  genres.find((g) => g.slug === slug) ?? null;
+  getGenres().find((g) => g.slug === slug) ?? null;
 
 export const getStationBySlug = (slug: string) =>
   getStations().find((s) => s.slug === slug) ?? null;
 
-export const getStationsByGenre = (genre: string) =>
-  getStations().filter((s) => s.genre === genre);
+/**
+ * Ranking = popularity × quality × reliability:
+ *  - popularity: listener votes
+ *  - quality:    stream bitrate, capped at 192k → up to +37.5%
+ *  - reliability: https transport +5%, known codec & bitrate +5%
+ */
+const rankScore = (s: Station) => {
+  const quality = Math.min(s.bitrate ?? 0, 192) / 512;
+  const https = s.stream_url.startsWith("https") ? 0.05 : 0;
+  const known = s.codec !== "UNKNOWN" && s.bitrate > 0 ? 0.05 : 0;
+  return s.votes * (1 + quality + https + known);
+};
 
-export const getFeatured = (n = 18) =>
-  [...getStations()].sort((a, b) => b.votes - a.votes).slice(0, n);
+export const rankStations = (list: Station[]) =>
+  [...list].sort((a, b) => rankScore(b) - rankScore(a));
+
+export const getStationsByGenre = (genre: string) =>
+  rankStations(getStations().filter((s) => s.genre === genre));
+
+export const getFeatured = (n = 18) => rankStations(getStations()).slice(0, n);
 
 export const getRelated = (station: Station, n = 8) =>
   getStationsByGenre(station.genre)
@@ -72,7 +92,7 @@ export const getRelated = (station: Station, n = 8) =>
 export function searchStations(q: string): Station[] {
   const needle = q.trim().toLowerCase();
   if (!needle) return [];
-  return getStations().filter(
+  return rankStations(getStations()).filter(
     (s) =>
       s.name.toLowerCase().includes(needle) ||
       s.genre.includes(needle) ||

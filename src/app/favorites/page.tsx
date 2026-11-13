@@ -8,10 +8,12 @@ export const metadata: Metadata = {
 
 export default function FavoritesPage() {
   return (
-    <div className="py-8">
-      <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">Favorites</h1>
-      <p className="mt-1 text-muted">Saved on this device only.</p>
-      <div className="mt-6">
+    <div className="py-6">
+      <h1 className="font-display text-[27px] font-semibold tracking-tight text-ink">
+        Favorites
+      </h1>
+      <p className="mt-1 text-xs text-muted">Saved on this device only.</p>
+      <div className="mt-5">
         <ClientStationList kind="favorites" />
       </div>
     </div>

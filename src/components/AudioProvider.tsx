@@ -32,7 +32,9 @@ type AudioCtx = {
   favorites: Set<string>;
   toggleFavorite: (id: string) => void;
   recents: PublicStation[];
+  clearRecents: () => void;
   favoriteStations: PublicStation[];
+  peekNext: () => Promise<PublicStation | null>;
 };
 
 const Ctx = createContext<AudioCtx | null>(null);
@@ -86,6 +88,18 @@ export default function AudioProvider({
   const [favMap, setFavMap] = useState<Record<string, PublicStation>>({});
   const [recents, setRecents] = useState<PublicStation[]>([]);
 
+  const destroyHls = () => {
+    hlsRef.current?.destroy();
+    hlsRef.current = null;
+  };
+
+  const clearWatchdog = () => {
+    if (watchdogRef.current) {
+      clearTimeout(watchdogRef.current);
+      watchdogRef.current = null;
+    }
+  };
+
   useEffect(() => {
     const audio = new Audio();
     audio.preload = "none";
@@ -129,18 +143,6 @@ export default function AudioProvider({
       if (watchdogRef.current) clearTimeout(watchdogRef.current);
     };
   }, []);
-
-  const destroyHls = () => {
-    hlsRef.current?.destroy();
-    hlsRef.current = null;
-  };
-
-  const clearWatchdog = () => {
-    if (watchdogRef.current) {
-      clearTimeout(watchdogRef.current);
-      watchdogRef.current = null;
-    }
-  };
 
   const play = useCallback(async (s: PublicStation) => {
     const audio = audioRef.current;
@@ -202,7 +204,7 @@ export default function AudioProvider({
     }
 
     setRecents((prev) => {
-      const next = [s, ...prev.filter((r) => r.id !== s.id)].slice(0, 20);
+      const next = [{ ...s, playedAt: Date.now() }, ...prev.filter((r) => r.id !== s.id)].slice(0, 20);
       localStorage.setItem(RECENT_KEY, JSON.stringify(next));
       return next;
     });
@@ -254,6 +256,19 @@ export default function AudioProvider({
 
   const next = useCallback(() => step(1), [step]);
   const prev = useCallback(() => step(-1), [step]);
+
+  /** The station `next` would play, without switching to it. */
+  const peekNext = useCallback(async () => {
+    const list = await ensureCatalog();
+    if (!list.length || !current) return null;
+    const i = list.findIndex((s) => s.id === current.id);
+    return list[(i + 1) % list.length] ?? null;
+  }, [ensureCatalog, current]);
+
+  const clearRecents = useCallback(() => {
+    setRecents([]);
+    localStorage.removeItem(RECENT_KEY);
+  }, []);
 
   // ---------- sleep timer ----------
   const setSleepTimer = useCallback((minutes: number | null) => {
@@ -405,14 +420,16 @@ export default function AudioProvider({
       favorites,
       toggleFavorite,
       recents,
+      clearRecents,
       favoriteStations: [...favorites]
         .map((id) => favMap[id])
         .filter((x): x is PublicStation => Boolean(x)),
+      peekNext,
     }),
     [
       current, status, error, nowPlaying, volume, setVolume, muted, toggleMute,
       play, toggle, stop, next, prev, sleepRemaining, setSleepTimer,
-      favorites, toggleFavorite, recents, favMap,
+      favorites, toggleFavorite, recents, favMap, clearRecents, peekNext,
     ]
   );
 

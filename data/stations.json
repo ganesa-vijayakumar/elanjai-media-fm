@@ -3293,7 +3293,7 @@
   "bitrate": 128,
   "votes": 221,
   "tags": [],
-  "is_active": false
+  "is_active": true
  },
  {
   "id": "9cfb2097",
@@ -3325,7 +3325,7 @@
   "bitrate": 0,
   "votes": 214,
   "tags": [],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "a7e0a923",
@@ -3476,7 +3476,7 @@
    "lo-fi",
    "lofi"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "a02de639",
@@ -4464,7 +4464,7 @@
    "sher",
    "surrey"
   ],
-  "is_active": true
+  "is_active": false
  },
  {
   "id": "b4475544",

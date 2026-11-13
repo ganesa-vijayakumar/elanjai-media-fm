@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Elanjai Media FM
 
-## Getting Started
+Free online radio directory — 290+ live Indian stations (Tamil, Hindi, Malayalam,
+Telugu, Kannada, Punjabi, Urdu and more), playable instantly in the browser.
 
-First, run the development server:
+Modeled on how directories like tamilradios.com / radiosindia.com work: broadcasters
+already publish public streams (Shoutcast / Icecast / HLS); this app catalogs those
+endpoints and adds search, genres, a persistent player and SEO landing pages. No audio
+is hosted or re-encoded — the browser connects to the broadcaster's own stream
+(or to our thin `/api/stream` proxy when a station only serves plain `http://`).
+
+## Stack
+
+- **Next.js 16** (App Router, Turbopack, Cache Components, React Server Components)
+- **React 19**, TypeScript, Tailwind CSS 4
+- **hls.js** for `.m3u8` streams (lazy-loaded only when needed)
+- Station catalog: `data/stations.json` (seeded from the radio-browser community DB)
+
+## Features
+
+- Home page with featured + per-language sections
+- 293 static station pages (`/station/<slug>`) with `RadioStation` + `BreadcrumbList` JSON-LD
+- Genre landing pages (`/genre/<slug>`)
+- Search (`/search?q=`)
+- Favorites + recently played (localStorage, `/favorites`, `/recent`)
+- Persistent bottom player — play/pause, volume, Media Session keys
+- JSON API: `GET /api/stations`, `GET /api/stations?genre=tamil&q=`, `GET /api/stations/<slug>`
+- HTTPS stream proxy `GET /api/stream?u=<base64url>` — allowlisted to catalog URLs,
+  forwards ICY metadata headers, fixes mixed-content for `http://` streams
+- `sitemap.xml`, `robots.txt`, `manifest.webmanifest`, PWA icon
+- Add-station / DMCA / About pages
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # 300+ prerendered pages
+npm run start   # production server
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Refreshing the catalog
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The seed data lives in `data/stations.json`. To regenerate from radio-browser:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# fetch per-language dumps, merge, dedupe, slugify — see scripts/make_seed.py
+python scripts/make_seed.py
+```
 
-## Learn More
+Stream endpoints die and move often; a periodic health-check that flips `is_active`
+is the natural next step (see `docs/` roadmap below if present).
 
-To learn more about Next.js, take a look at the following resources:
+## Legal note
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Station names, logos and streams belong to their owners. The directory links to
+publicly published streams and honors removal requests via the DMCA page.

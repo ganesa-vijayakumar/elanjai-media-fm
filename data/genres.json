@@ -1,0 +1,42 @@
+[
+ {
+  "slug": "hindi",
+  "name": "Hindi",
+  "count": 40
+ },
+ {
+  "slug": "india",
+  "name": "India",
+  "count": 21
+ },
+ {
+  "slug": "kannada",
+  "name": "Kannada",
+  "count": 23
+ },
+ {
+  "slug": "malayalam",
+  "name": "Malayalam",
+  "count": 39
+ },
+ {
+  "slug": "punjabi",
+  "name": "Punjabi",
+  "count": 37
+ },
+ {
+  "slug": "tamil",
+  "name": "Tamil",
+  "count": 79
+ },
+ {
+  "slug": "telugu",
+  "name": "Telugu",
+  "count": 27
+ },
+ {
+  "slug": "urdu",
+  "name": "Urdu",
+  "count": 27
+ }
+]
